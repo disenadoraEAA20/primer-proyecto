@@ -1,0 +1,77 @@
+/* diseño web hoja1.css*/
+
+/*diseño mobile first, ancho menor 640;*/
+.contenedor_adaptativo_grid {
+           display: grid;
+           grid-template-columns: 1fr;
+           grid-template-rows: 4em 3em 10em 3em 2em; 
+}
+
+/*ancho mayor o igual de 640px*/
+@media all and (min-width:640px) {
+.contenedor_adptativo_grid {
+           grid-template-columns: 3fr 1fr;
+           grid-template-rows: 4em 3em 10em 3em; 
+    }
+    hearder {
+              grid-column: 1 / 3
+    }
+    nav {
+              grid-column: 1 / 3
+    }
+    footer {
+              grid-column: 1 / 3
+    }
+    
+}
+
+
+/*ancho mayor de 1024px*/
+@media all and (min-width: 1024px) {
+.contenedor_adaptativo_grid {
+       grid-template-columns: 15fr 65fr 20fr;
+       grid-template-rows: 4em 10em 3em; 
+  }
+  header {
+           grid-column: span 3; 
+  }
+  nav {
+           grid-column: 1;
+  }
+  footer {
+           grid-column: 1 / 4;
+  }
+}
+
+
+/*colores de fondo*/
+
+header {
+        background-color: lightyellow;
+}
+
+nav {
+        background-color: burlywood;
+}
+
+
+main {
+        background-color: beige;
+}
+
+
+aside {
+        background-color: aquamarine;
+}
+
+footer {
+        background-color: bisque;
+}
+
+/*fuente cuerpo*/
+
+body {
+         font-size: 1.sem;
+         text-align: center;
+}
+
